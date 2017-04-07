@@ -73,7 +73,7 @@
               "test": "datum._id == tooltip._id",
               "value": "red"
             },
-            {"value": "steelblue"}
+            {"value": "#8a2be2"}
           ]
         }
       }
