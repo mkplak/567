@@ -1,0 +1,29 @@
+
+<html>
+<head>
+<title>Vega Visualization</title>
+<script src="https://vega.github.io/vega-editor/vendor/d3.min.js"></script>
+<script src="https://vega.github.io/vega-editor/vendor/d3.geo.projection.min.js"></script>
+<script src="https://vega.github.io/vega-editor/vendor/topojson.js"></script>
+<script src="https://vega.github.io/vega-editor/vendor/d3.layout.cloud.js"></script>
+<script src="https://vega.github.io/vega/vega.min.js"></script>
+
+<script src="https://vega.github.io/vega-editor/vendor/vega.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+</head>
+<body>
+<div id="vis"></div>
+<div id="vis2"></div>
+</body>
+<script type="text/javascript">
+// parse a spec and create a visualization view
+function parse(spec) {
+vg.parse.spec(spec, function(error, chart) { chart({el:"#vis"}).update(); });
+}
+function parse2(spec) {
+vg.parse.spec(spec, function(error, chart) { chart({el:"#vis2"}).update(); });
+}
+parse("https://raw.githubusercontent.com/mkplak/567/master/choropleth.json");
+parse2("https://raw.githubusercontent.com/mkplak/567/master/barchart.json");
+</script>
+</html>
