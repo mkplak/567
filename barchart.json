@@ -5,7 +5,7 @@
   "data": [
     {
       "name": "table",
-      "url": "https://raw.githubusercontent.com/mythicfais/resources/master/losses2015_transformed.csv",
+      "url": "https://raw.githubusercontent.com/mkplak/567/master/losses2015_transformed.csv",
       "format": {"type": "csv","parse": {"Amount": "number"}}
     },
     {

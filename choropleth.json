@@ -5,7 +5,7 @@
   "data": [
     {
       "name": "losses",
-      "url": "https://raw.githubusercontent.com/mythicfais/resources/master/losses2015_transformed.csv",
+      "url": "https://raw.githubusercontent.com/mkplak/567/master/losses2015_transformed.csv",
       "format": {"type": "csv", "parse": {"Amount":"number", "State_Abv":"string", "State_Code":"number", "Damage_Code":"string", "Damage_Descp":"string"}},
       "transform": [
         {"type": "aggregate", "groupby": "State_Code", "summarize": [{"field": "Amount", "ops": ["sum"], "as": ["Amount_sum"]}]}
@@ -13,7 +13,7 @@
     },
     {
       "name": "states",
-      "url": "https://raw.githubusercontent.com/mythicfais/resources/master/us-10m.json",
+      "url": "https://raw.githubusercontent.com/mkplak/567/master/us-10m.json",
       "format": {"type": "topojson", "feature": "states"},
       "transform": [
         { "type": "geopath", "projection": "albersUsa" },
